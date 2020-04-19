@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Media;
+using Martian_Battle.Properties;
 
 namespace Martian_Battle
 {
     public partial class GameForm : Form //основная форма приложения
     {
-        SoundPlayer m_gameMusic = new SoundPlayer("game.wav"); //ссылки на игровую музыку
-        SoundPlayer m_endMusic = new SoundPlayer("end.wav"); //ссылки на постигровую музыку
+        SoundPlayer m_gameMusic = new SoundPlayer(Resources.game); //ссылки на игровую музыку
+        SoundPlayer m_endMusic = new SoundPlayer(Resources.end); //ссылки на постигровую музыку
         Controller m_controlGame; //ссылка на управляющий объект
         public GameForm()
         {

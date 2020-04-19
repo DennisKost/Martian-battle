@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Martian_Battle.Properties;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 using System.Windows.Media;
 
@@ -31,6 +33,15 @@ namespace Martian_Battle
         public Controller(GameForm sourceForm, ProgressBar sourceProgressBar, TableLayoutPanel platform, TextBox[] ships)
         {
             //Инициализация основных полей для игры
+            byte[] flyBytes = new byte[Resources.fly.Length];
+            Resources.fly.Read(flyBytes, 0, flyBytes.Length);
+            FileStream fs = new FileStream("fly.wav", FileMode.Create);
+            fs.Write(flyBytes, 0, flyBytes.Length);
+            byte[] killBytes = new byte[Resources.kill.Length];
+            Resources.kill.Read(killBytes, 0, killBytes.Length);
+            fs = new FileStream("kill.wav", FileMode.Create);
+            fs.Write(killBytes, 0, killBytes.Length);
+            fs.Close();
             (m_shotSound = new MediaPlayer()).Open(new Uri("fly.wav", UriKind.Relative));
             (m_killSound = new MediaPlayer()).Open(new Uri("kill.wav", UriKind.Relative));
             m_sourceForm = sourceForm;
