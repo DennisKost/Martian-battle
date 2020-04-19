@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Windows.Media;
 
-namespace CP
+namespace Martian_Battle
 {
     class Controller //Основной управляющий игрой класс
     {

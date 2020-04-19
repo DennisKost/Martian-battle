@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace CP
+namespace Martian_Battle
 {
     class Ship //описание кораблей
     {

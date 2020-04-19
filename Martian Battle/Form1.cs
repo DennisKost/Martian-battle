@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Media;
 
-namespace CP
+namespace Martian_Battle
 {
     public partial class GameForm : Form //основная форма приложения
     {

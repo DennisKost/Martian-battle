@@ -1,4 +1,4 @@
-﻿namespace CP
+﻿namespace Martian_Battle
 {
     partial class GameForm
     {
@@ -113,50 +113,56 @@
             // 
             // Ship1
             // 
+            this.Ship1.BackColor = System.Drawing.Color.Blue;
             this.Ship1.Location = new System.Drawing.Point(398, 532);
             this.Ship1.Name = "Ship1";
-            this.Ship1.Size = new System.Drawing.Size(10, 20);
+            this.Ship1.Size = new System.Drawing.Size(0, 20);
             this.Ship1.TabIndex = 11;
             // 
             // Ship2
             // 
+            this.Ship2.BackColor = System.Drawing.Color.Blue;
             this.Ship2.Location = new System.Drawing.Point(398, 532);
             this.Ship2.Name = "Ship2";
-            this.Ship2.Size = new System.Drawing.Size(10, 20);
+            this.Ship2.Size = new System.Drawing.Size(0, 20);
             this.Ship2.TabIndex = 12;
             // 
             // Ship3
             // 
+            this.Ship3.BackColor = System.Drawing.Color.Green;
             this.Ship3.Location = new System.Drawing.Point(398, 532);
             this.Ship3.Name = "Ship3";
-            this.Ship3.Size = new System.Drawing.Size(10, 20);
+            this.Ship3.Size = new System.Drawing.Size(0, 20);
             this.Ship3.TabIndex = 13;
             // 
             // Ship4
             // 
+            this.Ship4.BackColor = System.Drawing.Color.Green;
             this.Ship4.Location = new System.Drawing.Point(398, 532);
             this.Ship4.Name = "Ship4";
-            this.Ship4.Size = new System.Drawing.Size(10, 20);
+            this.Ship4.Size = new System.Drawing.Size(0, 20);
             this.Ship4.TabIndex = 14;
             // 
             // Ship5
             // 
+            this.Ship5.BackColor = System.Drawing.Color.Red;
             this.Ship5.Location = new System.Drawing.Point(398, 532);
             this.Ship5.Name = "Ship5";
-            this.Ship5.Size = new System.Drawing.Size(10, 20);
+            this.Ship5.Size = new System.Drawing.Size(0, 20);
             this.Ship5.TabIndex = 15;
             // 
             // Ship6
             // 
-            this.Ship6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Ship6.BackColor = System.Drawing.Color.Red;
             this.Ship6.Location = new System.Drawing.Point(398, 532);
             this.Ship6.Name = "Ship6";
-            this.Ship6.Size = new System.Drawing.Size(10, 20);
+            this.Ship6.Size = new System.Drawing.Size(0, 20);
             this.Ship6.TabIndex = 16;
             // 
             // TroopsPicture
             // 
             this.TroopsPicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TroopsPicture.BackgroundImage")));
+            this.TroopsPicture.ErrorImage = global::Martian_Battle.Properties.Resources.Безымянный;
             this.TroopsPicture.Location = new System.Drawing.Point(0, 520);
             this.TroopsPicture.Name = "TroopsPicture";
             this.TroopsPicture.Size = new System.Drawing.Size(784, 42);
@@ -165,7 +171,7 @@
             // 
             // Platform
             // 
-            this.Platform.BackgroundImage = global::CP.Properties.Resources.background2;
+            this.Platform.BackgroundImage = global::Martian_Battle.Properties.Resources.background2;
             this.Platform.ColumnCount = 1;
             this.Platform.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Platform.Location = new System.Drawing.Point(305, 500);
