@@ -37,6 +37,7 @@ namespace Martian_Battle
             Resources.fly.Read(flyBytes, 0, flyBytes.Length);
             FileStream fs = new FileStream("fly.wav", FileMode.Create);
             fs.Write(flyBytes, 0, flyBytes.Length);
+            fs.Close();
             byte[] killBytes = new byte[Resources.kill.Length];
             Resources.kill.Read(killBytes, 0, killBytes.Length);
             fs = new FileStream("kill.wav", FileMode.Create);
